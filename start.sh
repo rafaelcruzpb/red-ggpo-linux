@@ -9,7 +9,7 @@ SCRIPT_FOLDER=`dirname ${READLINK_PATH} || pwd`
 START_SCRIPT="${SCRIPT_FOLDER}/${SCRIPT_FILE}"
 FBA="${SCRIPT_FOLDER}/${GGFBN_FILE}"
 
-if [ ! -x ${FBA} ]; then
+if [ ! -f ${FBA} ]; then
     echo "ERROR: Can't find ${GGFBN_FILE}, please put this script in the same folder as the ${GGFBN_FILE} and run this script again."
     exit 1
 fi

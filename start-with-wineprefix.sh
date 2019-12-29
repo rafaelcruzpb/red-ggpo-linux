@@ -12,7 +12,7 @@ START_SCRIPT="${SCRIPT_FOLDER}/${SCRIPT_FILE}"
 ORIGIN_FBA="${SCRIPT_FOLDER}/${GGFBN_FILE}"
 FBA="${CONFIG_FOLDER}/${GGFBN_FILE}"
 
-if [ ! -x ${ORIGIN_FBA} ]; then
+if [ ! -f ${ORIGIN_FBA} ]; then
     echo "ERROR: Can't find ${GGFBN_FILE}, please reinstall package."
     exit 1
 fi
