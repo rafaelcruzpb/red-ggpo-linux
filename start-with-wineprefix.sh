@@ -28,10 +28,11 @@ Type=Application
 Encoding=UTF-8
 Name=Red GGPO Emulator
 Exec=${START_SCRIPT} %U
+Icon=red-ggpo
 Terminal=false
 MimeType=x-scheme-handler/ggpo
-" > ~/.local/share/applications/red-ggpo-quark.desktop
-    xdg-mime default red-ggpo-quark.desktop x-scheme-handler/ggpo
+" > ~/.local/share/applications/red-ggpo.desktop
+    xdg-mime default red-ggpo.desktop x-scheme-handler/ggpo
 fi
 
 if [ -x /usr/bin/gconftool-2 ]; then
